@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            margin: 0;
+            width: 100%;
+            background-image: url(../float.layout/imgs/202950_m.jpg);
+         
+        }
+        header {
+            width: 100%;
+            height: 350px;
+            background-image: url(../float.layout/imgs/1000.png);
+            padding-bottom: 500px;
+            display: flex;
+            justify-content: space-between;
+           
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        ul li a {
+            color: black;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 50px;
+            padding-top: 2px;
+            padding-right: 2px;
+            font-size: 20px;
+        }
+        .picture {
+            width: 60%;
+            height: 150px;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            padding-top: 250px;
+            padding-left: 350px;
+            padding-bottom: 100px;
+            position: relative;
+         
+
+        }
+        .me {
+            width: 200px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            clip-path: circle(50% at 50% 50%);
+            text-align: center;
+            float: inline-end;
+            right: 20px;
+        }
+      
+        section {
+            width: 80%;
+            height: 300px;
+            border: 1px solid black;
+            box-shadow: 10px 10px 20px rgba(177, 171, 171, 0.966);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 200px;
+            text-align: center;
+            margin-top: 20px;
+
+        }
+        h2 {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position:absolute;
+            top: 350px;
+            font-size:40px;
+            
+
+        }
+        .message {
+            width: 20%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            float:none;
+            font-size: 30px;
+            position:absolute;
+            bottom: 200px;
+            right: 100px;
+            padding: 0;
+           
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items:center;
+            width: 90%;
+            height: 250px;
+            margin: auto;
+        }
+        .school {
+            width: 40%;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+        }
+        .back {
+            transform: rotateY(-180deg);
+            transition: all 0.5s ease-in;
+        }
+        .container:hover .school {
+            transform: rotateY(180deg);
+            transition: all 0.5s ease-in;
+        }
+        .container:hover .back {
+            transform: rotateY(0);
+            transition: all 0.5s ease-in;
+        }
+        .container, .back, .back2 {
+            backface-visibility: hidden;
+        }
+        .department {
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .back2 {
+            transform: rotateY(-180deg);
+            transition: all 0.5s ease-in;
+        }
+        .container:hover .department {
+            transform: rotateY(180deg);
+            transition: all 0.5s ease-in;
+        }
+        .container:hover .back2 {
+            transform: rotateY(0);
+            transition: all 0.5s ease-in;
+        }
+        nav {
+            width: 80%;
+            height: 600px;
+            padding: 30px;
+            margin: 160px;
+            display: flex;
+            justify-content: center;
+            border: 1px solid black;
+            box-shadow: 10px 10px 20px rgba(177, 171, 171, 0.966);
+        }
+        .photo {
+            
+            width: 80%;
+            max-width: 1200px;
+           
+
+        }
+        .photo-list {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3,200px);
+            overflow: hidden;
+        }
+        .size img {
+            width: 100%;
+        }
+        .pic1 {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;  
+        }
+        
+        .pos {
+            transform: rotateY(-200px);
+        }
+        .pic2 {
+            padding-top: 50px;
+        }
+        
+
+     
+        
+  
+     
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+         <div class="message">
+            <div><a href="#"><i class="fa-brands fa-facebook"></i></a></div>
+            <div><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
+            <div><a href="#"><i class="fa-brands fa-twitter"></i></a></div>
+            <div><a href="#"><i class="fa-brands fa-line"></i></a></div>
+        </div>
+        <div class="picture">
+        <h2>Welcome My Resume</h2>
+        <div class="me">
+            <img src="../float.layout/imgs/me.jpg" alt=""> 
+        </div>
+        
+    </div>
+          <ul>
+            <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+            <li><a href="#"><i class="fa-regular fa-address-card"></i>about</a></li>
+            <li><a href="#"><i class="fa-solid fa-address-book"></i>Portfolio</a></li>
+            <li><a href="#"><i class="fa-solid fa-file-signature"></i>Contact</a></li>
+         </ul>
+    </header>
+    <section>
+        <div class="container">
+            <div class="school"><img src="../float.layout/imgs/ChingKuo.jpg" alt=""></div>
+            <div class="back">
+                我是就讀經國學院(德育護專)的美容流行設計系，從小到大就很喜歡漂亮美麗的事物，我覺得能夠讓別人變美是一件很棒的事，看別人開心，我的內心也會得到無比的快樂
+            </div>
+            <div class="department"><img src="../float.layout/imgs/design.jpg" alt=""></div>
+            <div class="back2">
+                美容流行設計系教學課程有分很多種類，包括妝髮設計、整體造型、美體美容、芳療、美甲、攝影等等..，學校也會合作許多廠商單位讓學生去參加各種比賽及實習機會
+            </div>
+        </div>
+    </section>
+    <nav class="Photo">
+        <div class="photo-list">
+          <div class="size"><img src="../float.layout/imgs/01.png" alt=""></div>
+          <div class="size"><img src="../float.layout/imgs/02.png" class="pic1" alt=""></div>
+          <div class="size"><img src="../float.layout/imgs/03.png" alt=""></div>
+          <div class="size"><img src="../float.layout/imgs/04.png" alt=""></div>
+          <div class="size"><img src="../float.layout/imgs/05.jpg" alt=""></div>
+          <div class="size"><img src="../float.layout/imgs/06.jpg" class="pos" alt=""></div>
+          <div class="size"><img src="../float.layout/imgs/07.jpg" alt=""></div>
+          <div class="size"><img src="../float.layout/imgs/08.jpg" alt=""></div>
+        </div>
+    </nav>
+
+
+</body>
+</html>

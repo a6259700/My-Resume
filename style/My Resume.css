@@ -1,0 +1,474 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    background-image: url(../imgs/202950_m.jpg);
+
+}
+
+header {
+    width: 100%;
+    height: 350px;
+    background-image: url(../imgs/1000.png);
+    padding-bottom: 500px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.logo{
+    font-size: 30px;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-style: italic;
+}
+.logo i {
+    color: rgb(244, 231, 144);
+}  
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+ul li a {
+    color: rgb(237, 114, 70);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding-top: 2px;
+    padding-right: 2px;
+    font-size: 20px;
+    font-family: "Reggae One", system-ui;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.picture {
+    width: 40%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 250px;
+    padding-left: 250px;
+    padding-bottom: 100px;
+    position: relative;
+
+
+}
+
+.me {
+    width: 200px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    float: inline-end;
+}
+
+.me>img {
+    border-radius: 8pt 8pt 8pt 8pt;
+}
+
+section {
+    width: 80%;
+    border-radius: 8pt 8pt 8pt 8pt;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+h2 {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 350px;
+    font-size: 40px;
+    font-family: "Reggae One", system-ui;
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+.message {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: none;
+    font-size: 30px;
+    position: absolute;
+    bottom: 200px;
+    right: 100px;
+    padding: 0;
+
+}
+.message a{
+    color: rgb(204, 57, 31);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.school {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back {
+    transform: rotateY(-180deg);
+    transition: all 0.5s ease-in;
+    font-size: 25px;
+    font-family: "Stick", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container:hover .school {
+    transform: rotateY(180deg);
+    transition: all 0.5s ease-in;
+}
+
+.container:hover .back {
+    transform: rotateY(0);
+    transition: all 0.5s ease-in;
+}
+
+.container,
+.back,
+.back2 {
+    backface-visibility: hidden;
+}
+
+.department {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back2 {
+    transform: rotateY(-180deg);
+    transition: all 0.5s ease-in;
+}
+
+.container:hover .department {
+    transform: rotateY(180deg);
+    transition: all 0.5s ease-in;
+}
+
+.container:hover .back2 {
+    transform: rotateY(0);
+    transition: all 0.5s ease-in;
+}
+
+nav {
+    width: 80%;
+    height: 600px;
+    padding: 30px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    border-radius: 8pt 8pt 8pt 8pt;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.photo {
+
+    width: 80%;
+    max-width: 1200px;
+
+
+}
+
+.photo-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    overflow: hidden;
+}
+
+.size img {
+    width: 100%;
+}
+
+.pic1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pos {
+    transform: rotateY(-200px);
+}
+
+.pic2 {
+    padding-top: 50px;
+}
+
+.back-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flap-card {
+    display: flex;
+    margin: 20px;
+}
+
+.experience {
+    font-weight: bold;
+}
+
+.experience ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.experience ul li {
+    list-style-type: circle;
+    padding: 2px;
+    font-size: 18px;
+    font-family: "Stick", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    border-bottom: 2px dashed rgb(148, 147, 147);
+    padding: 3px;
+    font-size: 30px;
+    font-family: "Reggae One", system-ui;
+    font-weight: 300;
+    font-style: normal;
+}
+
+h3 {
+    font-size: 25px;
+    font-family: "Reggae One", system-ui;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.W-50 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#contactForm {
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px #969696;
+    background-color: white;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Reggae One", system-ui;
+    font-weight: 300;
+    font-style: normal;
+    
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input[type="text"] {
+    height: 40px;
+    border-radius: 10px;
+    flex-grow: 1;
+    padding: 8px;
+    font-size: 18px;
+}
+
+input[type="text"]:focus {
+    outline: 2px solid rgb(148, 147, 147);
+}
+.btn-confirm{
+    font-family: "Reggae One", system-ui;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.contact {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    text-align: center;
+    flex-direction: row;
+    margin-top: 30px;
+    padding: 15px;
+}
+h4{
+    font-size: 40px;
+    font-family: "Reggae One", system-ui;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.contact-me ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-me ul li {
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    font-size: 18px;
+    font-family: "Stick", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+p{
+    padding: 2px;
+    font-size: 16px;
+    font-family: "Stick", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    background-color: rgb(225, 204, 185);
+    color: white;
+    margin-top: 20px;
+}
+
+ /* 手機版 */
+@media screen and (max-width: 500px) {
+    header {
+        flex-wrap: wrap;
+    }
+    header ul li {
+        display: flex;
+
+    }
+    nav {
+        width: 100%;
+    }
+    ul {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    ul li {
+        width: 100%;
+    }
+    form {
+        width: 60%;
+    }
+    div {
+        flex-wrap: nowrap;
+    }
+    .picture{
+        display: none;
+    }
+    .school {
+        width: 50%;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .back {
+       font-size: 25px;
+       font-family: "Stick", sans-serif;
+       font-weight: 400;
+       font-style: normal;
+    }
+
+   .container:hover .school {
+       backface-visibility: hidden;
+    }
+   .container:hover .back {
+       backface-visibility: hidden;
+    }
+    .back {
+       width: 100%;    
+    }
+    .message {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+    #contactForm {
+        width: 60%;
+        padding: 10px;
+    }
+    .contact {
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+}     
+    /* 平板 */
+    @media screen and (max-width:991px){
+    
+    header {
+        flex-wrap: nowrap;
+    }
+    .picture {
+        margin-top: 85px;
+    }
+    h2 {
+        display: flex;
+       
+    }
+    .message {
+        top: 100px;
+    }
+    .logo {
+        display: flex;
+        align-content: flex-start;
+        align-items: flex-start;
+    }
+    
+}
